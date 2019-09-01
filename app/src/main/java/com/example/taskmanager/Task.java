@@ -5,7 +5,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Task  { // implements Serializable
+public class Task implements Serializable {
 
     public String title;
     public String description;

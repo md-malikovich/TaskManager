@@ -40,7 +40,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskViewHolder> {
     }
 
     public void addNewTask(Task task) {
-        task.add(task); // не могу понять в чем причина ошибки.
+        tasks.add(task); // не могу понять в чем причина ошибки.
         notifyDataSetChanged();
     }
 }
