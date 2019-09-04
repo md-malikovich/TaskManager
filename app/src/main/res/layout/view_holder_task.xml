@@ -13,7 +13,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="10dp"
-        android:text="Default title"
+        android:text="@string/default_title"
         android:textSize="20sp"/>
 
     <CheckBox
@@ -35,7 +35,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/task_title"
         />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.taskmanager;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,8 +40,14 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskViewHolder> {
         return task.size();
     }
 
-    public void addNewTask(Task task) {
-        tasks.add(task); // не могу понять в чем причина ошибки.
+    public void addNewTask(Task tasks) {
+        task.add(tasks);
         notifyDataSetChanged();
+        Log.d("ololo", "addNewTask");
     }
+
+/*    public void addNewTask(String text) {
+        task.add(new Task("Some title1", "Some description", new Date(), new Date(), true));
+        notifyDataSetChanged();
+    }*/
 }
