@@ -52,7 +52,7 @@ public class NewTaskActivity extends AppCompatActivity {
                 //String fullTask = newTask + " " + newDescription + " " + startDate + " " + endDate + " " + newStatus;
                 Intent intent = new Intent();
                 intent.putExtra(NEW_KEY, task);
-                setResult(RESULT_OK);
+                setResult(RESULT_OK, intent);
                 Log.d("ololo", "addTask");
                 finish();
             }

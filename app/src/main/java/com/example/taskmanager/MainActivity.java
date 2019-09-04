@@ -45,8 +45,10 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == CODE) {
             if (resultCode == RESULT_OK) {
-                //String text = data.getStringExtra(NewTaskActivity.NEW_KEY);
+                //String text = data.getStringExtra(NewTaskActivity.NEW_KEY); //
                 Task task = (Task) data.getSerializableExtra (NewTaskActivity.NEW_KEY);
+                //Intent intent = new Intent(MainActivity.this, NewTaskActivity.class);
+                //intent.putExtra(NewTaskActivity.NEW_KEY, task);
                 adapter.addNewTask(task);
             }
         }
