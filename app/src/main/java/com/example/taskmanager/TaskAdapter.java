@@ -42,6 +42,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskViewHolder> {
 
     public void addNewTask(Task tasks) {
         task.add(tasks);
+        //tasks.add(task);
         notifyDataSetChanged();
         Log.d("ololo", "addNewTask");
     }
